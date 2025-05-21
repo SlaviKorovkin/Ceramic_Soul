@@ -14,36 +14,36 @@
     height: 40px;
     font-size: 16px;
     &:focus {
-        outline: 1px solid $Ceramic;
-        border: 1px solid $Ceramic;
+        outline: 1px solid $ceramic;
+        border: 1px solid $ceramic;
     }
     &:disabled {
-        border: 1px solid $ui-disabled;
         color: $ui-disabled;
+        border: 1px solid $ui-disabled;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .btn-default {
         &:hover {
-            background-color: $Dark;
-            color: $Light;
+            background-color: $dark;
+            color: $light;
         }
         &:active {
             background: rgba(217, 217, 217, 0.1);
             box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.4) inset;
-            color: $Dark;
+            color: $dark;
             border: none;
         }
     }
     .btn-send {
         &:active {
-            outline: 1px solid $Ceramic;
-            border: 1px solid $Ceramic;
+            outline: 1px solid $ceramic;
+            border: 1px solid $ceramic;
         }
         &:hover {
-            color: $Ceramic;
-            border: 1px solid $Ceramic;
+            color: $ceramic;
+            border: 1px solid $ceramic;
         }
     }
 }

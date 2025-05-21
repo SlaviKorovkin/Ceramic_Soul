@@ -13,11 +13,12 @@
     }
     &__text {
         margin-block-start: 20px;
-        color: $Dark;
+        color: $dark;
         font-size: 16px;
         font-weight: 400;
+        line-height: normal;
         &_colored {
-            color: $Ceramic;
+            color: $ceramic;
             font-weight: 500;
         }
     }
@@ -32,14 +33,6 @@
         &__text {
             margin-block-start: 25px;
             font-size: 20px;
-        }
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .activities {
-        &__col {
-            padding: 0 10px;
         }
     }
 }
