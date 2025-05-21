@@ -1,3 +1,7 @@
-import "purecss/build/grids-min.css";
-import "purecss/build/grids-responsive-min.css";
 import "/src/sass/style.scss";
+
+let text = "Hello World";
+const pi = 3.14;
+
+console.log(text);
+console.log(pi);
