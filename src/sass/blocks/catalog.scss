@@ -34,4 +34,37 @@
             bottom: -1px;
         }
     }
+    &__content {
+        margin-top: 60px;
+        &-item {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+    &__card {
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+        &-img {
+            width: 100%;
+        }
+        &-info {
+            padding: 11px 12px 17px 12px;
+            border: 1px solid $dark;
+            border-top: none;
+        }
+        &-name {
+            color: #000;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        &-price {
+            margin-top: 8px;
+            color: #000;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
 }
