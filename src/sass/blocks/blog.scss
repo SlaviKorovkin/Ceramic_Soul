@@ -1,4 +1,5 @@
 @use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/mixins.scss" as *;
 
 .blog {
     padding-top: 50px;
@@ -47,24 +48,7 @@
         &__wrapper {
             padding: 25px 25px 0 25px;
             position: relative;
-            &::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 200px;
-                height: 1px;
-                background-color: $dark;
-            }
-            &::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 1px;
-                height: 200px;
-                background-color: $dark;
-            }
+            @include angle-decoration;
         }
         &__text {
             margin-top: 15px;
@@ -74,6 +58,42 @@
                 gap: 0;
                 justify-content: space-between;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .blog {
+        &__wrapper {
+            gap: 50px;
+            align-items: flex-start;
+        }
+        &__card {
+            width: 520px;
+            min-height: 375px;
+        }
+        &__img {
+            height: 241px;
+            object-fit: cover;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .blog {
+        padding-top: 40px;
+        &__wrapper {
+            align-items: stretch;
+        }
+        &__title {
+            margin-top: 100px;
+        }
+        &__card {
+            width: 670px;
+        }
+        &__img {
+            height: 241px;
+            object-fit: cover;
         }
     }
 }
