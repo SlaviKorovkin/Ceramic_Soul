@@ -1,0 +1,21 @@
+@use "/src/sass/base/variables.scss" as *;
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes rotate-circle {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(100px)
+            rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(100px)
+            rotate(-360deg);
+    }
+}
